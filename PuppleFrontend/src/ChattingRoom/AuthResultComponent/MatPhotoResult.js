@@ -52,7 +52,7 @@ const MatPhotoResult=(props)=> {
 
     React.useEffect(()=>{
         console.log(props.userId,props.dogId)
-        axios.post(`${HS_API_END_POINT}/api/mat_detector/`,{
+        axios.post(`${HS_API_END_POINT}/api/mat_detector/getimage/`,{
             user_id:props.userId,
             dog_id:props.dogId,
         })
